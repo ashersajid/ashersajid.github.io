@@ -1,0 +1,85 @@
+/* styles.css */
+
+body {
+    font-family: 'Times', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #f4f4f4, #eaeaea);
+}
+
+header {
+    background: linear-gradient(45deg, #333, #555);
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    border-bottom: 2px solid #fff;
+    position: relative;
+}
+
+h1 {
+    font-size: 2em; /* Increase font size for a more prominent header */
+    font-family: 'Fantasy', sans-serif; /* Use a fantasy-style font if available */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle text shadow for depth */
+    margin-bottom: 0.5em; /* Provide some space below the title */
+}
+
+.header-info {
+    overflow: hidden;
+}
+
+.header-info p {
+    font-style: italic; /* Italicize the sliding text for a fantasy touch */
+    /*animation: slideText 5s linear infinite; /* Add the sliding animation */*/
+}
+
+@keyframes slideText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background: linear-gradient(45deg, #333, #555);
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+footer:hover {
+    background: linear-gradient(45deg, #555, #777);
+}

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asher Sajid - Personal Webpage</title>
+    <link rel="stylesheet" href="/Users/ashersajid/Documents/Website/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Add this line to 
+
+    link your CSS file -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            /*background-color: #fff;*/
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 10px;
+            transition: color 0.3s; /* Smooth transition effect for heading color */
+        }
+
+        h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+            color: #ff6600; /* Change the heading color when hovering */
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        section h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            line-height: 1.6;
+        }
+
+        #contact-icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .contact-icon {
+            font-size: 36px; /* Increase the font size */
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4CAF50;
+            transition: color 0.3s;
+        }
+
+        .contact-icon:hover {
+            color: #fff;
+        }
+
+        #share-icon {
+            font-size: 24px;
+            color: #4CAF50;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+     /*   #share-icon:hover {
+            color: #fff;
+        }*/
+        #icon-container {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        #icon-container > div {
+            margin-right: 15px; /* Adjust spacing between icons as needed */
+        }
+        #download-icon {
+            font-size: 24px; /* Adjust icon size */
+            cursor: pointer;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+         <h1>Asher Sajid</h1>
+        <div class="header-info">
+            <p>Embedded Software Engineer | Cryptography FPGA Expert</p>
+        </div>
+        <div id="icon-container">
+            <!-- Share icon -->
+            <div id="share-icon" onclick="shareProfile()">
+                <i class="fas fa-share-alt"></i>
+            </div>
+            <!-- Contact icons -->
+            <a href="mailto:malikasher267@gmail.com" class="contact-icon" style="color: #4CAF50;">&#9993;</a>
+            <a href="https://wa.me/923105963267" class="contact-icon">
+                <img src="icon.png" alt="WhatsApp Icon" style="color: #4CAF50; width: 22px; height: 22px;">
+            </a>
+            <!-- Download icon -->
+            <i id="download-icon" class="fas fa-download" onclick="downloadPdf()"></i>
+        </div>
+        <!-- Your header content -->
+       
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Asher Sajid is a highly innovative researcher who has published his thoughts and ideas in various international journals. His experience in the industrial platform has enabled him to think critically and analyze problems effectively. Furthermore, Asher has demonstrated a mastery of various programming languages such as Python, Verilog, C, and C++, in addition to his hands-on experience in diverse areas, including PCIe communication, audio over ethernet, data communication over ethernet, gpsd, and ntp over FPGA. With this expertise, he has designed and implemented sophisticated systems that are both efficient and effective.
+Overall, Asher's combination of academic research and industry experience has enabled him to make significant contributions to the field of electrical engineering, particularly in the area of FPGA design and implementation.</p>
+     </section>
+    <section id="education">
+        <h2>Education</h2>
+        <h3>2021-2023</h3>
+        <p>
+            <strong>Master of Science in Electrical Engineering:</strong> MS (EEE) with a specialization in Automation and Control from 
+            <a href="https://www.bahria.edu.pk/" target="_blank">Bahria University Islamabad Campus, Pakistan</a>
+            <br>
+            <strong>CGPA:</strong> 3.6/4.00
+            <br>
+            <strong>Thesis Title:</strong> A Crypto Accelerator of Binary Edward Curves for Securing Low-resource Embedded Devices (Published in Applied Sciences)
+            <br>
+            <strong>Supervisor:</strong> Dr. Atif Raza Jafri (<a href="mailto:atif.raza@bui.edu.pk">atif.raza@bui.edu.pk</a>)
+        </p>
+        
+        <h3>2016-2020</h3>
+        <p>
+            <strong>Bachelor of Science in Electrical (Electronics) Engineering:</strong> BS (EEE) from 
+            <a href="https://cuiatd.edu.pk/" target="_blank">Comsats University Islamabad, Abbottabad Campus, Pakistan</a>
+            <br>
+            <strong>Major Courses:</strong> Digital System Design, VLSI, Microprocessors, Digital Signal Processing, Industrial Electronics, Control Systems, Communication Systems
+            <br>
+            <strong>CGPA:</strong> 3.61/4.00 (Silver Medalist)
+            <br>
+            <strong>Graduation Project:</strong> Hardware Implementation of Moving Object Detection Algorithms
+            <br>
+            <strong>Supervisor:</strong> Dr. Muhammad Imran Shehzad (<a href="mailto:imranshahzad@cuiatd.edu.pk">imranshahzad@cuiatd.edu.pk</a>)
+        </p>
+        
+        <h3>2014-2016</h3>
+        <p>
+            Higher Secondary School Certificate (HSSC) in Pre-Engineering Group from Board of Intermediate and Secondary Education (BISE) Abbottabad Pakistan in First Division
+        </p>
+        
+        <h3>2012-2014</h3>
+        <p>
+            Secondary School Certificate (SSC) from BISE Abbottabad Pakistan in First Division
+        </p>
+    </section>
+    <section id="experience">
+        <h2>Professional Experience</h2>
+
+        <h3>Embedded (Software) Design Engineer at Bcube Pvt Limited (February 2021 - June 2023)</h3>
+        <p>
+            Achievements:
+        </p>
+        <ul>
+            <li>Demonstrated proficiency in programming languages including C/C++, Python, Javascript, and Matlab to optimize software solutions for embedded systems.</li>
+            <li>Played a pivotal role in the design and development of customized embedded Linux using Yocto and Petalinux frameworks, ensuring tailored and secure solutions.</li>
+            <li>Spearheaded the creation of applications and services using C and Python languages, bolstering the operational capabilities of defense systems.</li>
+            <li>Leveraged expertise in bash scripting to automate processes for BCube Open VPX based products, streamlining operations and increasing productivity.</li>
+            <li>Contributed significantly to the development of high-speed data transfer links over PCIe, enhancing data communication efficiency for critical defense applications.</li>
+            <li>Successfully engineered a network time protocol service based on GPS, delivering precise time synchronization essential for mission-critical operations.</li>
+            <li>Designed and implemented remote procedure call mechanisms for seamless data communication, enabling efficient exchange of information within the defense infrastructure.</li>
+            <li>Pioneered the creation of a real audio streaming protocol for audio communication over Ethernet, strengthening communication channels for tactical coordination.</li>
+            <li>Employed skills in database management, specifically with SQLite, to enhance data organization and retrieval capabilities, thereby improving overall system efficiency.</li>
+            <li>Presentation of results through interface control documents.</li>
+        </ul>
+
+        <h3>Research Engineer at National Science, Technology and Innovative Plan, Saudi Arabia (September 2020 - January 2021)</h3>
+        <p>
+            Achievements:
+        </p>
+        <ul>
+            <li>Exhibited an in-depth grasp of various cryptographic algorithms, their underlying mathematics, and their applications within secure systems.</li>
+            <li>Orchestrated the architectural design of cryptoprocessors, meticulously integrating diverse cryptographic algorithms to achieve synergy between security and efficiency.</li>
+            <li>Executed comprehensive design space exploration, meticulously factoring in throughput, flexibility, area, security, and power consumption constraints.</li>
+            <li>Spearheaded FPGA-based implementations of cryptographic algorithms, meticulously optimizing design parameters for peak performance.</li>
+            <li>Conducted rigorous performance comparisons between various implementations, providing quantifiable insights into efficiency and effectiveness.</li>
+            <li>Translated research outcomes into impactful scientific publications, effectively disseminating insights and contributing to the broader cryptographic community.</li>
+        </ul>
+   </section>
+    <section id="skills">
+        <h2>Skills and Expertise</h2>
+        <h3>Hardware Description Languages:</h3>
+        <ul>
+            <li>Verilog for digital system design</li>
+        </ul>
+        <h3>Software Design and Assembly Programming Languages:</h3>
+        <ul>
+            <li>C/C++ and Java for simulation and functional validation of embedded systems</li>
+            <li>Matlab for algorithmic development</li>
+            <li>Python for development of embedded system projects and artificial intelligence</li>
+            <li>Assembly language of 8086 architecture and PIC (18F452)</li>
+            <li>Vitis for development of Linux application</li>
+            <li>Petalinux and Yocto for customized Linux</li>
+            <li>Javascript for client-side web development</li>
+            <li>HTML is used to structure a web page and its content</li>
+            <li>Wordpress is used to design the webpage</li>
+        </ul>
+        <h3>Modern Engineering Tools:</h3>
+        <ul>
+            <li>Chip Scale Atomic Clock (CSAC) and GPSDO for GPS NMEA data and NTP</li>
+            <li>ModelSim and Xilinx 14.5 for simulation and synthesis of RTL (Register Transfer Level) code</li>
+            <!-- Add more tools as needed -->
+        </ul>
+        <h3>Additional Skills:</h3>
+        <ul>
+            <li>Latex for engineering and scientific writing</li>
+            <li>Microsoft Office (Word, Excel, Power Point) for oral and written communication</li>
+        </ul>
+        <h3>Operating Systems:</h3>
+        <ul>
+            <li>MAC OS (High Sierra 10.13.6 version)</li>
+            <li>Ubuntu 18.04</li>
+            <li>Windows 10/8/7</li>
+        </ul>
+    </section>
+    <section id="publications">
+        <h2>Publications</h2>
+        <ol>
+            <li>
+                M. Rashid, O.S. Sonbul, M.Y.I. Zia, M. Arif, A. Sajid, and S. Alotaibi.
+                "Throughput/Area-Efficient Accelerator of Elliptic Curve Point Multiplication over GF(2^233) on FPGA."
+                <i>Electronics</i> 2023, 12, 3611. <a href="https://doi.org/10.3390/electronics12173611" target="_blank">https://doi.org/10.3390/electronics12173611</a>.
+            </li>
+            <li>
+                A. Sajid, O.S. Sonbul, M. Rashid, A.R. Jafri, M. Arif, and M.Y.I. Zia.
+                “A Crypto Accelerator of Binary Edward Curves for Securing Low-Resource Embedded Devices.”
+                <i>Appl. Sci.</i> 2023, 13, 8633. <a href="https://doi.org/10.3390/app13158633" target="_blank">https://doi.org/10.3390/app13158633</a>.
+            </li>
+            <li>
+                A. Sajid, O.S. Sonbul, M. Rashid, and M.Y.I. Zia.
+                “A Hybrid Approach for Efficient and Secure Point Multiplication on Binary Edwards Curves.”
+                <i>Appl. Sci.</i> 2023, 13, 5799. <a href="https://doi.org/10.3390/app13095799" target="_blank">https://doi.org/10.3390/app13095799</a>.
+            </li>
+            <li>
+                S. Zulqarnain Khan, S. Shaukat Jamal, A. Sajid and M. Rashid.
+                “FPGA implementation of elliptic-curve diffie hellman protocol.”
+                <i>Computers, Materials & Continua</i>, vol. 73, no. 1, pp. 1879–1894, 2022.
+            </li>
+            <li>
+                A. Sajid, M. Rashid, M. Imran and A. R. Jafri.
+                “A Low-Complexity Edward-Curve Point Multiplication Architecture.”
+                <i>electronics</i>, pp. 1–16, 2021.
+            </li>
+            <li>
+                M. Rashid, M. Imran, and A. Sajid.
+                “An Efficient Elliptic-Curve Point Multiplication Architecture for High-Speed Cryptographic Applications.”
+                <i>electronics</i>, pp. 1–16, 2020.
+            </li>
+            <li>
+                A. Sajid,  M. Rashid, S.S. Jamal, M. Imran, S.S. Alotaibi and M.H. Sinky.
+                “AREEBA: An Area Efficient Binary Huff Curve Architecture.”
+                <i>electronics</i>, pp. 1–14, 2021.
+            </li>
+            <li>
+                M. Rashid, M. Imran, M. Kashif and A. Sajid.
+                “An Optimized Architecture for Binary Huff Curves with Improved Security.”
+                In <i>IEEE Access</i>, vol. 9, pp. 88498-88511, 2021.
+            </li>
+            <li>
+                M. Rashid, M.M.Hazzazi, S.Z.Khan, A.R.Alharbi, A. Sajid, A. Aljaedi.
+                “A Novel Low-Area Point Multiplication Architecture for Elliptic-Curve Cryptography.”
+                <i>electronics</i> 2021, 10, 2698. <a href="https://doi.org/10.3390/electronics10212698" target="_blank">https://doi.org/10.3390/electronics10212698</a>.
+            </li>
+        </ol>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email:<a href="malikasher267@gmail.com">malikasher267@gmail.com</a></p>
+        <!-- Add more contact information as needed -->
+    </section>
+   <!--  <footer>
+        Footer content goes here
+    </footer> -->
+<!--      <script>
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script> -->
+    <script>
+    function shareProfile() {
+        if (navigator.share) {
+            navigator.share({
+                title: 'Asher Sajid',
+                text: 'Check out Asher Sajid\'s personal webpage!',
+                url: 'https://ashersajid.github.io/'
+            })
+            .then(() => console.log('Shared successfully'))
+            .catch((error) => console.error('Error sharing:', error));
+        } else {
+            alert('Web Share API not supported on this browser.');
+        }
+    }
+
+    function scrollToContact() {
+        document.getElementById('contact').scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+    function downloadPdf() {
+            // Open the print dialog
+            window.print();
+        }
+</script>
+
+</body>
+</html>
